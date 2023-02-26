@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>複数の動画のサムネ</title>
+    </head>
+    <body>
+        <div class="video-container">
+            <img src="picture/ow.jpg" class="thumbnail" data-video="video/ow.mp4">
+            <img src="picture/ow.jpg" class="thumbnail" data-video="video/ow2.mp4">
+            <img src="picture/ow.jpg" class="thumbnail" data-video="video/ow3.mp4">
+        </div>
+
+        <video id="video-player" class="video-player" controls>
+            <source src="" id="video-source">
+        </video>
+
+        <script>
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const videoPlayer = document.querySelector('#video-player');
+        const videoSource = document.querySelector('#video-source');
+
+        thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener('click', function() {
+            videoSource.src = this.dataset.video;
+            videoPlayer.load();
+            videoPlayer.classList.add('show');
+        });
+        });
+        </script>
+    </body>
+</html>
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>動画を表示するページ</title>
+</head>
+<body>
+    <video width="960" height="540" controls>
+        <source src="video/ow.mp4" type="video/mp4">
+        お使いのブラウザは動画の再生に対応していません。
+    </video>
+</body>
+</html>-->

@@ -1,0 +1,61 @@
+﻿.title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #1e90ff;
+    text-shadow: 2px 2px 5px #888888;
+}
+
+.description {
+    text-align: center;
+    font-size: 18px;
+    margin: 50px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #888888;
+    border: 2px solid #1e90ff;
+}
+
+video {
+    background-color: black;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 2px 2px 5px #888888;
+    border-radius: 10px;
+}
+
+body {
+    background-color: black;
+}
+
+.thumbnail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+.thumbnail {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.video-player-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.video-player {
+    width: 800px;
+    height: 600px;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #888888;
+}
