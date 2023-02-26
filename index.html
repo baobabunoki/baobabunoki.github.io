@@ -16,17 +16,17 @@
         </video>
 
         <script>
-        const thumbnails = document.querySelectorAll('.thumbnail');
-        const videoPlayer = document.querySelector('#video-player');
-        const videoSource = document.querySelector('#video-source');
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            const videoPlayer = document.querySelector('#video-player');
+            const videoSource = document.querySelector('#video-source');
 
-        thumbnails.forEach(thumbnail => {
-        thumbnail.addEventListener('click', function() {
-            videoSource.src = this.dataset.video;
-            videoPlayer.load();
-            videoPlayer.classList.add('show');
-        });
-        });
+            thumbnails.forEach(thumbnail => {
+                thumbnail.addEventListener('click', function() {
+                    videoSource.src = this.dataset.video;
+                    videoPlayer.load();
+                    videoPlayer.classList.add('show');
+                });
+            });
         </script>
     </body>
 </html>
